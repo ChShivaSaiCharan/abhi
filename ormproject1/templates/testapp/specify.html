@@ -1,0 +1,19 @@
+{%  extends 'testapp/base.html'%}
+{% block my_block %}
+<h1>Employee Specific Information</h1>
+<table border="3">
+    <thead>
+    <th>Employee Name</th>
+    <th>Employeee Salary</th>
+    </thead>
+    {% for i in details %}
+
+    <tr>
+        {% for i in i %}
+        <td>{{i}}</td>
+        {% endfor %}
+    </tr>
+    {% endfor %}
+
+</table>
+{% endblock %}
